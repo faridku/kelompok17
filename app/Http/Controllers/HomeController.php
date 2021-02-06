@@ -66,8 +66,8 @@ class HomeController extends Controller
     {
         $list = User::all();
         $user = $list->find($id);
-        // $pdf = PDF::loadView('profile.sertif', compact('user'));
-        // return $pdf->download('sertif.pdf');
-        return view('profile.sertif', compact('user'));
+        $pdf = PDF::loadView('profile.sertif', compact('user'));
+        return $pdf->download('sertif.pdf');
+        // return view('profile.sertif', compact('user'));
     }
 }
