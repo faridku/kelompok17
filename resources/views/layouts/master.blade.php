@@ -62,7 +62,8 @@
                         <!-- Logo text -->
                         <span class="logo-text">
                             <!-- dark Logo text -->
-                            <img src="../../assets/images/logo-text.png" alt="homepage" class="light-logo" />
+                            <img src="../../assets/images/logo-horizontal.png" style="width:90%" alt="homepage"
+                                class="light-logo" />
 
                         </span>
                         <!-- Logo icon -->

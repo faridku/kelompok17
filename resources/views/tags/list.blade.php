@@ -36,17 +36,16 @@
                                 <p class="card-subtitle text-muted">Dibuat Oleh : {{ $question->user->name }} / Pada
                                     tanggal
                                     : {{ $question->created_at }}</p>
-                                <p class="card-text">{{ $question->isi }}</p>
+                                <p class="card-text">{!! $question->isi !!}</p>
                                 @foreach ($question->tags as $tag)
                                     <a href="/tag/{{ $tag->id }}"
                                         class="btn badge badge-pill badge-dark">{{ $tag->tag_name }}</a>
                                 @endforeach
                                 <br>
                                 <div class="mt-2">
-                                    <a href="/answer/create/{{ $question->id }}"
-                                        class="card-link badge badge-pill badge-success">Bantu Jawab</a>
-                                    <a href="/question/{{ $question->id }}"
-                                        class="card-link badge badge-pill badge-info">Details
+                                    <a href="/answer/create/{{ $question->id }}" class="card-link btn btn-success">Bantu
+                                        Jawab</a>
+                                    <a href="/question/{{ $question->id }}" class="card-link btn btn-info">Details
                                         Pertanyaan</a>
                                 </div>
                             </div>
