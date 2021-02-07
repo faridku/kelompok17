@@ -218,8 +218,8 @@
                                     @endforeach
                                 </div>
                             </div>
-                            {{-- <a href=" {{action('VoteController@upvote')}} " class="fa fa-arrow-up mr-4 like">UPVOTE</a> --}}
-                            {{-- <a href=" {{action('VoteController@downvote')}} " class="fa fa-arrow-down like">DOWNVOTE</a> --}}
+                            {{-- <a href=" {{ action('VoteController@upvote') }} " class="fa fa-arrow-up mr-4 like">UPVOTE</a> --}}
+                            {{-- <a href=" {{ action('VoteController@downvote') }} " class="fa fa-arrow-down like">DOWNVOTE</a> --}}
                             <br>
                         </div>
                     </div>
