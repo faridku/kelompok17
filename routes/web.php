@@ -25,7 +25,6 @@ Route::get('/profile/{user_id}/sertif', 'HomeController@sertif');
 Route::put('/profile/{user_id}', 'HomeController@update');
 Route::resource('question', 'QuestionController');
 
-// Route::resource('answer', 'AnswerController');
 
 // Tidak pakai resource, karena harus mengambil id dari Question
 Route::get('answer/create/{question_id}', 'AnswerController@create'); // to form isi ans
