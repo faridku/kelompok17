@@ -43,17 +43,11 @@
                                 @endforeach
                                 <br>
                                 <div class="mt-2">
-<<<<<<< HEAD
                                     <a href="/answer/create/{{ $question->id }}"
                                         class="card-link btn btn-success">Bantu Jawab</a>
                                     <a href="/question/{{ $question->id }}"
                                         class="card-link btn btn-info">Details
-=======
-                                    <a href="/answer/create/{{ $question->id }}" class="card-link btn btn-success">Bantu
-                                        Jawab</a>
-                                    <a href="/question/{{ $question->id }}" class="card-link btn btn-info">Details
->>>>>>> 7af3198736b94c3f1acb1f6243aaf97a8f95b518
-                                        Pertanyaan</a>
+                                    </a>
                                 </div>
                             </div>
                         </div>
