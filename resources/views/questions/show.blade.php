@@ -155,17 +155,6 @@
                                 <a href="/answer/{{ $answer->id }}/verify"
                                     class="card-link btn btn-outline-success">Tandai Jawaban Benar</a>
                             @endif
-                            
-                                <button type="button" style="margin-left:10px;" class="btn btn-success likebtn">
-                                    <i class="fa fa-arrow-up like"></i>
-                                </button>
-                                <input type="number" id="input1" value="{{ $question->like }}" name=""
-                                style="width: 50px; border:none; background:none; color: #919191; font-size: 18px; margin: 0 5px; pointer-events: none;">
-                                <button type="button" class="btn btn-danger dislikebtn">
-                                    <i class="fa fa-arrow-down dislike"></i>
-                                </button>
-                                <input type="number" id="input2" value="{{ $question->dislike }}" name=""
-                                style="width: 50px; border:none; background:none; color: #919191; font-size: 18px; margin: 0 5px; pointer-events: none;">
                             {{-- Comment --}}
                             <div class="dropdown">
                                 <a class="btn btn-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
