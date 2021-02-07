@@ -27,7 +27,7 @@
 
         <!-- Main content -->
         <section class="content" id="dw">
-            <div class="container-fluid">
+            <div class="container-fluid col-md-12">
                 @foreach ($list as $question)
                     <div class="row-sm">
                         <div class="card">
@@ -36,7 +36,7 @@
                                 <p class="card-subtitle text-muted">Dibuat Oleh : {{ $question->user->name }} / Pada
                                     tanggal
                                     : {{ $question->created_at }}</p>
-                                <p class="card-text">{{ $question->isi }}</p>
+                                <p class="card-text">{!! $question->isi !!}</p>
                                 @foreach ($question->tags as $tag)
                                     <a href="/tag/{{ $tag->id }}"
                                         class="btn badge badge-pill badge-dark">{{ $tag->tag_name }}</a>
@@ -44,9 +44,9 @@
                                 <br>
                                 <div class="mt-2">
                                     <a href="/answer/create/{{ $question->id }}"
-                                        class="card-link badge badge-pill badge-success">Bantu Jawab</a>
+                                        class="card-link btn btn-success">Bantu Jawab</a>
                                     <a href="/question/{{ $question->id }}"
-                                        class="card-link badge badge-pill badge-info">Details
+                                        class="card-link btn btn-info">Details
                                         Pertanyaan</a>
                                 </div>
                             </div>

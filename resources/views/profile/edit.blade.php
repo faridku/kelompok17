@@ -9,8 +9,9 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="card">
-                        <form action="/profile/{{ Auth::user()->id }}" method="POST" class="form-horizontal">
+                        <form action="/profile/{{ Auth::user()->id }}" method="POST" class="form-horizontal" enctype="multipart/form-data">
                             @csrf
+                            {{ csrf_field() }}
                             @method('PUT')
                             <div class="card-body">
                                 <h4 class="card-title">Personal Info</h4>
@@ -66,8 +67,7 @@
                                 <div class="form-group row">
                                     <label for="foto" class="col-sm-3 text-right control-label col-form-label">Photo</label>
                                     <div class="col-sm-9">
-                                        <input type="text" class="form-control" name="foto" id="foto"
-                                            placeholder="Photo Here" value="{{ $user->foto }}">
+                                        <input type="file" class="form-control" name="foto" id="foto" placeholder="Photo Here" value="{{ $user->foto }}">
                                     </div>
                                 </div>
                             </div>

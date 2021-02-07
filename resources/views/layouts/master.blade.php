@@ -62,7 +62,7 @@
                         <!-- Logo text -->
                         <span class="logo-text">
                             <!-- dark Logo text -->
-                            <img src="../../assets/images/logo-text.png" alt="homepage" class="light-logo" />
+                            <img src="../../assets/images/logo-text1.png" alt="homepage" class="light-logo" />
 
                         </span>
                         <!-- Logo icon -->
@@ -115,6 +115,9 @@
                         </li> --}}
                         <li class="nav-item d-none d-sm-inline-block">
                             <a href="/home" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item d-none d-sm-inline-block">
+                            <a href="/question/create" class="nav-link">Buat Pertanyaan</a>
                         </li>
                         <li class="nav-item d-none d-sm-inline-block">
                             <a href="/question" class="nav-link">List Pertanyaan</a>
